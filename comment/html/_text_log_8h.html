@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>common functions: common_log/TextLog.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">common functions
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c873050c822d3e6af892f9019b1e4cd6.html">common_log</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle">
+<div class="title">TextLog.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>日志类  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;tchar.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+TextLog.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_text_log_8h__incl.png" border="0" usemap="#common__log_2_text_log_8h" alt=""/></div>
+<map name="common__log_2_text_log_8h" id="common__log_2_text_log_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="_text_log_8h__dep__incl.png" border="0" usemap="#common__log_2_text_log_8hdep" alt=""/></div>
+<map name="common__log_2_text_log_8hdep" id="common__log_2_text_log_8hdep">
+</map>
+</div>
+</div>
+<p><a href="_text_log_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html">common::CTextLog</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">操作日志类.  <a href="classcommon_1_1_c_text_log.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespacecommon"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecommon.html">common</a></td></tr>
+<tr class="memdesc:namespacecommon"><td class="mdescLeft">&#160;</td><td class="mdescRight">常用类库命名空间 <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ad36399393da65b6f3b338cccfa4bb831"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_text_log_8h.html#ad36399393da65b6f3b338cccfa4bb831">WIDEN2</a>(x)&#160;&#160;&#160;L ## x</td></tr>
+<tr class="memdesc:ad36399393da65b6f3b338cccfa4bb831"><td class="mdescLeft">&#160;</td><td class="mdescRight">窄字符前加上"L".  <a href="#ad36399393da65b6f3b338cccfa4bb831">更多...</a><br /></td></tr>
+<tr class="separator:ad36399393da65b6f3b338cccfa4bb831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d933cd369a295f1299a8eec2f6ef60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_text_log_8h.html#a91d933cd369a295f1299a8eec2f6ef60">WIDEN</a>(x)&#160;&#160;&#160;<a class="el" href="_text_log_8h.html#ad36399393da65b6f3b338cccfa4bb831">WIDEN2</a>(x)</td></tr>
+<tr class="memdesc:a91d933cd369a295f1299a8eec2f6ef60"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出unicode编码  <a href="#a91d933cd369a295f1299a8eec2f6ef60">更多...</a><br /></td></tr>
+<tr class="separator:a91d933cd369a295f1299a8eec2f6ef60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50218d805518247edfff3d9328be684"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_text_log_8h.html#aa50218d805518247edfff3d9328be684">__WFILE__</a>&#160;&#160;&#160;<a class="el" href="_text_log_8h.html#a91d933cd369a295f1299a8eec2f6ef60">WIDEN</a>(__FILE__)</td></tr>
+<tr class="memdesc:aa50218d805518247edfff3d9328be684"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出当前源文件名  <a href="#aa50218d805518247edfff3d9328be684">更多...</a><br /></td></tr>
+<tr class="separator:aa50218d805518247edfff3d9328be684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08be36736eeab5ded1bd3a063073dcc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_text_log_8h.html#ae08be36736eeab5ded1bd3a063073dcc">__TFILE__</a>&#160;&#160;&#160;__FILE__</td></tr>
+<tr class="memdesc:ae08be36736eeab5ded1bd3a063073dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出ansi编码的源文件名  <a href="#ae08be36736eeab5ded1bd3a063073dcc">更多...</a><br /></td></tr>
+<tr class="separator:ae08be36736eeab5ded1bd3a063073dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e897d3bdcc661b96874476f2b1ee535"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_text_log_8h.html#a8e897d3bdcc661b96874476f2b1ee535">__WFUNCTION__</a>&#160;&#160;&#160;<a class="el" href="_text_log_8h.html#a91d933cd369a295f1299a8eec2f6ef60">WIDEN</a>(__FUNCTION__)</td></tr>
+<tr class="memdesc:a8e897d3bdcc661b96874476f2b1ee535"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得unicode编码的方法名  <a href="#a8e897d3bdcc661b96874476f2b1ee535">更多...</a><br /></td></tr>
+<tr class="separator:a8e897d3bdcc661b96874476f2b1ee535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29daf9fd2350c20c232c4deb3dbff9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_text_log_8h.html#ab29daf9fd2350c20c232c4deb3dbff9b">__TFUNCTION__</a>&#160;&#160;&#160;__FUNCTION__</td></tr>
+<tr class="memdesc:ab29daf9fd2350c20c232c4deb3dbff9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出ansi编码的方法名  <a href="#ab29daf9fd2350c20c232c4deb3dbff9b">更多...</a><br /></td></tr>
+<tr class="separator:ab29daf9fd2350c20c232c4deb3dbff9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8795752c1e91643285740272e71338fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_text_log_8h.html#a8795752c1e91643285740272e71338fc">WRITE_LOG</a>(level, format,...)&#160;&#160;&#160;g_logger.AddTLog(true,level, <a class="el" href="_text_log_8h.html#ae08be36736eeab5ded1bd3a063073dcc">__TFILE__</a>, <a class="el" href="_text_log_8h.html#ab29daf9fd2350c20c232c4deb3dbff9b">__TFUNCTION__</a>, __LINE__, format,__VA_ARGS__)</td></tr>
+<tr class="memdesc:a8795752c1e91643285740272e71338fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入一行日志,并自动追加换行符.  <a href="#a8795752c1e91643285740272e71338fc">更多...</a><br /></td></tr>
+<tr class="separator:a8795752c1e91643285740272e71338fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac434706ba87ba81884db819ad81a599a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_text_log_8h.html#ac434706ba87ba81884db819ad81a599a">WRITE_LOGLINE</a>(level, format,...)&#160;&#160;&#160;g_logger.AddTLog(false,level, <a class="el" href="_text_log_8h.html#ae08be36736eeab5ded1bd3a063073dcc">__TFILE__</a>, <a class="el" href="_text_log_8h.html#ab29daf9fd2350c20c232c4deb3dbff9b">__TFUNCTION__</a>, __LINE__, format,__VA_ARGS__)</td></tr>
+<tr class="memdesc:ac434706ba87ba81884db819ad81a599a"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入一行日志,但不追加换行符.  <a href="#ac434706ba87ba81884db819ad81a599a">更多...</a><br /></td></tr>
+<tr class="separator:ac434706ba87ba81884db819ad81a599a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0499dcb85922b683da3918f512adb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_text_log_8h.html#afa0499dcb85922b683da3918f512adb6">LINE_BUFFER_SIZE</a>&#160;&#160;&#160;(1024)</td></tr>
+<tr class="memdesc:afa0499dcb85922b683da3918f512adb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">每条日志最大长度.  <a href="#afa0499dcb85922b683da3918f512adb6">更多...</a><br /></td></tr>
+<tr class="separator:afa0499dcb85922b683da3918f512adb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:af715c011984b434cbb7f04b0d4e57589"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589">common::ENUM_LOG_LINE_LEVEL</a> { <br />
+&#160;&#160;<a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589ab7ce17935d51ac5ff7d948bf7c639998">common::LOG_LEVEL_DEBUG</a> = 1, 
+<a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589aba07f87f81074202ff59db8661e3d44f">common::LOG_LEVEL_INFO</a> = 2, 
+<a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589a24bcbd256da906340f42c99ea36d77eb">common::LOG_LEVEL_WARN</a> = 3, 
+<a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589ad82d0ab8af0d3318125bb95d5aa55c2c">common::LOG_LEVEL_ERROR</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589a65a1bea5cce5921300fe87e0ae6956d2">common::LOG_LEVEL_FATAL</a> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:af715c011984b434cbb7f04b0d4e57589"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志信息的等级  <a href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589">更多...</a><br /></td></tr>
+<tr class="separator:af715c011984b434cbb7f04b0d4e57589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>日志类 </p>
+<p>文件中包含了g_logger全局对象g_logger 会LOG_DIR下生成以"程序名_YYYYMMDD.log"日志文件. </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="_text_log_8cpp.html#acd4d3023d24d5314b895981b17825666" title="日志文件存放目录. ">LOG_DIR</a> </dd></dl>
+<dl class="section author"><dt>作者</dt><dd>DebugGo </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>1.0.0.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2014-7-31 </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ae08be36736eeab5ded1bd3a063073dcc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __TFILE__&#160;&#160;&#160;__FILE__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输出ansi编码的源文件名 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab29daf9fd2350c20c232c4deb3dbff9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __TFUNCTION__&#160;&#160;&#160;__FUNCTION__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输出ansi编码的方法名 </p>
+
+</div>
+</div>
+<a class="anchor" id="aa50218d805518247edfff3d9328be684"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __WFILE__&#160;&#160;&#160;<a class="el" href="_text_log_8h.html#a91d933cd369a295f1299a8eec2f6ef60">WIDEN</a>(__FILE__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输出当前源文件名 </p>
+<dl class="section see"><dt>参见</dt><dd>WINDEN </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e897d3bdcc661b96874476f2b1ee535"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __WFUNCTION__&#160;&#160;&#160;<a class="el" href="_text_log_8h.html#a91d933cd369a295f1299a8eec2f6ef60">WIDEN</a>(__FUNCTION__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获得unicode编码的方法名 </p>
+
+</div>
+</div>
+<a class="anchor" id="afa0499dcb85922b683da3918f512adb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINE_BUFFER_SIZE&#160;&#160;&#160;(1024)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>每条日志最大长度. </p>
+
+</div>
+</div>
+<a class="anchor" id="a91d933cd369a295f1299a8eec2f6ef60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WIDEN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="_text_log_8h.html#ad36399393da65b6f3b338cccfa4bb831">WIDEN2</a>(x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输出unicode编码 </p>
+<dl class="section see"><dt>参见</dt><dd>WINDEN2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad36399393da65b6f3b338cccfa4bb831"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WIDEN2</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;L ## x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>窄字符前加上"L". </p>
+<dl class="section see"><dt>参见</dt><dd><b>WFUNCTION</b> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8795752c1e91643285740272e71338fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_LOG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">level, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">format, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;g_logger.AddTLog(true,level, <a class="el" href="_text_log_8h.html#ae08be36736eeab5ded1bd3a063073dcc">__TFILE__</a>, <a class="el" href="_text_log_8h.html#ab29daf9fd2350c20c232c4deb3dbff9b">__TFUNCTION__</a>, __LINE__, format,__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写入一行日志,并自动追加换行符. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac434706ba87ba81884db819ad81a599a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_LOGLINE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">level, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">format, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;g_logger.AddTLog(false,level, <a class="el" href="_text_log_8h.html#ae08be36736eeab5ded1bd3a063073dcc">__TFILE__</a>, <a class="el" href="_text_log_8h.html#ab29daf9fd2350c20c232c4deb3dbff9b">__TFUNCTION__</a>, __LINE__, format,__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写入一行日志,但不追加换行符. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 八月 1日 星期五 18:34:01 , 为 common functions使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

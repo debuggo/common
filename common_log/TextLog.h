@@ -22,7 +22,7 @@ namespace common
 {
 
 	/**
-	*	日志信息等级.
+	* @brief 日志信息的等级
 	*/
 	enum ENUM_LOG_LINE_LEVEL
 	{
@@ -271,6 +271,10 @@ namespace common
 		 */
 		CRITICAL_SECTION m_cs;
 	};
+
+	/**
+	 @brief	全局日志类.
+	 */
 	extern CTextLog g_logger;
 }
 #endif // !TEXTLOG_H

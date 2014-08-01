@@ -1,0 +1,206 @@
+\hypertarget{classcommon_1_1ini}{\section{common\+:\+:ini类 参考}
+\label{classcommon_1_1ini}\index{common\+::ini@{common\+::ini}}
+}
+
+
+ini类.  
+
+
+
+
+{\ttfamily \#include $<$Ini.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcommon_1_1ini_a09ee5995bd6e8c0d9ed356fc9c07ea31}{ini} ()
+\begin{DoxyCompactList}\small\item\em 默认构造函数. \end{DoxyCompactList}\item 
+\hyperlink{classcommon_1_1ini_a99c9d789432be862a71b040e2e80176b}{ini} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em 构造同时给对path\+\_\+赋值. \end{DoxyCompactList}\item 
+virtual \hyperlink{classcommon_1_1ini_afbfb0b27b5737f11bdd67d87be8b9789}{$\sim$ini} ()
+\begin{DoxyCompactList}\small\item\em 默认的析构函数. \end{DoxyCompactList}\item 
+void \hyperlink{classcommon_1_1ini_a5c59d15623cc99a113ff87e837fbd60e}{setpath} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em 设置path\+\_\+的值. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classcommon_1_1ini_a6891dae2b2770a318d58b730ef43e707}{getpath} ()
+\begin{DoxyCompactList}\small\item\em 获取ini文件路径. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classcommon_1_1ini_a80a19e11288c5f45b2cfae48859510b6}{getiniroot} ()
+\begin{DoxyCompactList}\small\item\em 获取ini文件的跟节点. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classcommon_1_1ini_a4a727d7b5808a36feaead77ac4a39e29}{path\+\_\+}
+\begin{DoxyCompactList}\small\item\em ini文件路径. \end{DoxyCompactList}\item 
+boost\+::property\+\_\+tree\+::ptree \hyperlink{classcommon_1_1ini_af2c22999ed5116ac29a0f5c69bd77e43}{ini\+\_\+boot\+\_\+}
+\begin{DoxyCompactList}\small\item\em ini文件的跟节点. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+ini类. 
+
+\begin{DoxyAuthor}{作者}
+Debug Go 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+8/1/2014 
+\end{DoxyDate}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classcommon_1_1ini_a09ee5995bd6e8c0d9ed356fc9c07ea31}{\index{common\+::ini@{common\+::ini}!ini@{ini}}
+\index{ini@{ini}!common\+::ini@{common\+::ini}}
+\subsubsection[{ini}]{\setlength{\rightskip}{0pt plus 5cm}common\+::ini\+::ini (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcommon_1_1ini_a09ee5995bd6e8c0d9ed356fc9c07ea31}
+
+
+默认构造函数. 
+
+\begin{DoxyAuthor}{作者}
+Debug Go 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+8/1/2014 
+\end{DoxyDate}
+\hypertarget{classcommon_1_1ini_a99c9d789432be862a71b040e2e80176b}{\index{common\+::ini@{common\+::ini}!ini@{ini}}
+\index{ini@{ini}!common\+::ini@{common\+::ini}}
+\subsubsection[{ini}]{\setlength{\rightskip}{0pt plus 5cm}common\+::ini\+::ini (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcommon_1_1ini_a99c9d789432be862a71b040e2e80176b}
+
+
+构造同时给对path\+\_\+赋值. 
+
+\begin{DoxyAuthor}{作者}
+Debug Go 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+8/1/2014 
+\end{DoxyDate}
+
+\begin{DoxyParams}{参数}
+{\em path} & ini文件的路径. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{classcommon_1_1ini_a4a727d7b5808a36feaead77ac4a39e29}{path\+\_\+} 
+
+\hyperlink{classcommon_1_1ini_a5c59d15623cc99a113ff87e837fbd60e}{setpath()} \hyperlink{classcommon_1_1ini_a80a19e11288c5f45b2cfae48859510b6}{getiniroot()} 
+\end{DoxySeeAlso}
+\hypertarget{classcommon_1_1ini_afbfb0b27b5737f11bdd67d87be8b9789}{\index{common\+::ini@{common\+::ini}!````~ini@{$\sim$ini}}
+\index{````~ini@{$\sim$ini}!common\+::ini@{common\+::ini}}
+\subsubsection[{$\sim$ini}]{\setlength{\rightskip}{0pt plus 5cm}common\+::ini\+::$\sim$ini (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcommon_1_1ini_afbfb0b27b5737f11bdd67d87be8b9789}
+
+
+默认的析构函数. 
+
+\begin{DoxyAuthor}{作者}
+Debug Go 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+8/1/2014 
+\end{DoxyDate}
+
+
+\subsection{成员函数说明}
+\hypertarget{classcommon_1_1ini_a80a19e11288c5f45b2cfae48859510b6}{\index{common\+::ini@{common\+::ini}!getiniroot@{getiniroot}}
+\index{getiniroot@{getiniroot}!common\+::ini@{common\+::ini}}
+\subsubsection[{getiniroot}]{\setlength{\rightskip}{0pt plus 5cm}void common\+::ini\+::getiniroot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1ini_a80a19e11288c5f45b2cfae48859510b6}
+
+
+获取ini文件的跟节点. 
+
+\begin{DoxyReturn}{返回}
+返回结构,成功为true,否则返回false; 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{作者}
+Debug Go 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+8/1/2014 
+\end{DoxyDate}
+\begin{DoxyAttention}{注意}
+必须确保path\+\_\+已经被正确赋值. 
+\end{DoxyAttention}
+利用boost\+::property\+\_\+tree\+::iniparser的read\+\_\+ini方法读取ini文件 如果出入的path无效,抛出file\+\_\+parser\+\_\+error(文件分析错误) ini的内容存在异常,抛出ini\+\_\+parser\+\_\+error(ini分析错误)\hypertarget{classcommon_1_1ini_a6891dae2b2770a318d58b730ef43e707}{\index{common\+::ini@{common\+::ini}!getpath@{getpath}}
+\index{getpath@{getpath}!common\+::ini@{common\+::ini}}
+\subsubsection[{getpath}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string common\+::ini\+::getpath (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcommon_1_1ini_a6891dae2b2770a318d58b730ef43e707}
+
+
+获取ini文件路径. 
+
+\begin{DoxyAuthor}{作者}
+Debug Go 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+8/1/2014 
+\end{DoxyDate}
+\begin{DoxyReturn}{返回}
+A std\+::string. 
+\end{DoxyReturn}
+\hypertarget{classcommon_1_1ini_a5c59d15623cc99a113ff87e837fbd60e}{\index{common\+::ini@{common\+::ini}!setpath@{setpath}}
+\index{setpath@{setpath}!common\+::ini@{common\+::ini}}
+\subsubsection[{setpath}]{\setlength{\rightskip}{0pt plus 5cm}void common\+::ini\+::setpath (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcommon_1_1ini_a5c59d15623cc99a113ff87e837fbd60e}
+
+
+设置path\+\_\+的值. 
+
+如果path的值有效会获取ini的boot节点. \begin{DoxyAuthor}{作者}
+Debug Go 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+8/1/2014 
+\end{DoxyDate}
+
+\begin{DoxyParams}{参数}
+{\em path} & ini文件路径. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{classcommon_1_1ini_a80a19e11288c5f45b2cfae48859510b6}{getiniroot()} 
+\end{DoxySeeAlso}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classcommon_1_1ini_af2c22999ed5116ac29a0f5c69bd77e43}{\index{common\+::ini@{common\+::ini}!ini\+\_\+boot\+\_\+@{ini\+\_\+boot\+\_\+}}
+\index{ini\+\_\+boot\+\_\+@{ini\+\_\+boot\+\_\+}!common\+::ini@{common\+::ini}}
+\subsubsection[{ini\+\_\+boot\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::property\+\_\+tree\+::ptree common\+::ini\+::ini\+\_\+boot\+\_\+\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1ini_af2c22999ed5116ac29a0f5c69bd77e43}
+
+
+ini文件的跟节点. 
+
+\hypertarget{classcommon_1_1ini_a4a727d7b5808a36feaead77ac4a39e29}{\index{common\+::ini@{common\+::ini}!path\+\_\+@{path\+\_\+}}
+\index{path\+\_\+@{path\+\_\+}!common\+::ini@{common\+::ini}}
+\subsubsection[{path\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string common\+::ini\+::path\+\_\+\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1ini_a4a727d7b5808a36feaead77ac4a39e29}
+
+
+ini文件路径. 
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+common\+\_\+ini/\hyperlink{_ini_8h}{Ini.\+h}\item 
+common\+\_\+ini/\hyperlink{_ini_8cpp}{Ini.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,168 @@
+\hypertarget{_text_log_8h}{\section{common\+\_\+log/\+Text\+Log.h 文件参考}
+\label{_text_log_8h}\index{common\+\_\+log/\+Text\+Log.\+h@{common\+\_\+log/\+Text\+Log.\+h}}
+}
+
+
+日志类  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$windows.\+h$>$}\\*
+{\ttfamily \#include $<$tchar.\+h$>$}\\*
+Text\+Log.\+h 的引用(Include)关系图\+:
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcommon_1_1_c_text_log}{common\+::\+C\+Text\+Log}
+\begin{DoxyCompactList}\small\item\em 操作日志类. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecommon}{common}
+\begin{DoxyCompactList}\small\item\em 常用类库命名空间 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_text_log_8h_ad36399393da65b6f3b338cccfa4bb831}{W\+I\+D\+E\+N2}(x)~L \#\# x
+\begin{DoxyCompactList}\small\item\em 窄字符前加上\char`\"{}\+L\char`\"{}. \end{DoxyCompactList}\item 
+\#define \hyperlink{_text_log_8h_a91d933cd369a295f1299a8eec2f6ef60}{W\+I\+D\+E\+N}(x)~\hyperlink{_text_log_8h_ad36399393da65b6f3b338cccfa4bb831}{W\+I\+D\+E\+N2}(x)
+\begin{DoxyCompactList}\small\item\em 输出unicode编码 \end{DoxyCompactList}\item 
+\#define \hyperlink{_text_log_8h_aa50218d805518247edfff3d9328be684}{\+\_\+\+\_\+\+W\+F\+I\+L\+E\+\_\+\+\_\+}~\hyperlink{_text_log_8h_a91d933cd369a295f1299a8eec2f6ef60}{W\+I\+D\+E\+N}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em 输出当前源文件名 \end{DoxyCompactList}\item 
+\#define \hyperlink{_text_log_8h_ae08be36736eeab5ded1bd3a063073dcc}{\+\_\+\+\_\+\+T\+F\+I\+L\+E\+\_\+\+\_\+}~\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+
+\begin{DoxyCompactList}\small\item\em 输出ansi编码的源文件名 \end{DoxyCompactList}\item 
+\#define \hyperlink{_text_log_8h_a8e897d3bdcc661b96874476f2b1ee535}{\+\_\+\+\_\+\+W\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}~\hyperlink{_text_log_8h_a91d933cd369a295f1299a8eec2f6ef60}{W\+I\+D\+E\+N}(\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em 获得unicode编码的方法名 \end{DoxyCompactList}\item 
+\#define \hyperlink{_text_log_8h_ab29daf9fd2350c20c232c4deb3dbff9b}{\+\_\+\+\_\+\+T\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}~\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+
+\begin{DoxyCompactList}\small\item\em 输出ansi编码的方法名 \end{DoxyCompactList}\item 
+\#define \hyperlink{_text_log_8h_a8795752c1e91643285740272e71338fc}{W\+R\+I\+T\+E\+\_\+\+L\+O\+G}(level, format,...)~g\+\_\+logger.\+Add\+T\+Log(true,level, \hyperlink{_text_log_8h_ae08be36736eeab5ded1bd3a063073dcc}{\+\_\+\+\_\+\+T\+F\+I\+L\+E\+\_\+\+\_\+}, \hyperlink{_text_log_8h_ab29daf9fd2350c20c232c4deb3dbff9b}{\+\_\+\+\_\+\+T\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, format,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em 写入一行日志,并自动追加换行符. \end{DoxyCompactList}\item 
+\#define \hyperlink{_text_log_8h_ac434706ba87ba81884db819ad81a599a}{W\+R\+I\+T\+E\+\_\+\+L\+O\+G\+L\+I\+N\+E}(level, format,...)~g\+\_\+logger.\+Add\+T\+Log(false,level, \hyperlink{_text_log_8h_ae08be36736eeab5ded1bd3a063073dcc}{\+\_\+\+\_\+\+T\+F\+I\+L\+E\+\_\+\+\_\+}, \hyperlink{_text_log_8h_ab29daf9fd2350c20c232c4deb3dbff9b}{\+\_\+\+\_\+\+T\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, format,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em 写入一行日志,但不追加换行符. \end{DoxyCompactList}\item 
+\#define \hyperlink{_text_log_8h_afa0499dcb85922b683da3918f512adb6}{L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}~(1024)
+\begin{DoxyCompactList}\small\item\em 每条日志最大长度. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacecommon_af715c011984b434cbb7f04b0d4e57589}{common\+::\+E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+V\+E\+L} \{ \\*
+\hyperlink{namespacecommon_af715c011984b434cbb7f04b0d4e57589ab7ce17935d51ac5ff7d948bf7c639998}{common\+::\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+U\+G} = 1, 
+\hyperlink{namespacecommon_af715c011984b434cbb7f04b0d4e57589aba07f87f81074202ff59db8661e3d44f}{common\+::\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+F\+O} = 2, 
+\hyperlink{namespacecommon_af715c011984b434cbb7f04b0d4e57589a24bcbd256da906340f42c99ea36d77eb}{common\+::\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N} = 3, 
+\hyperlink{namespacecommon_af715c011984b434cbb7f04b0d4e57589ad82d0ab8af0d3318125bb95d5aa55c2c}{common\+::\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+O\+R} = 4, 
+\\*
+\hyperlink{namespacecommon_af715c011984b434cbb7f04b0d4e57589a65a1bea5cce5921300fe87e0ae6956d2}{common\+::\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+A\+L} = 5
+ \}
+\begin{DoxyCompactList}\small\item\em 日志信息的等级 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+日志类 
+
+文件中包含了g\+\_\+logger全局对象g\+\_\+logger 会\+L\+O\+G\+\_\+\+D\+I\+R下生成以\char`\"{}程序名\+\_\+\+Y\+Y\+Y\+Y\+M\+M\+D\+D.\+log\char`\"{}日志文件. \begin{DoxySeeAlso}{参见}
+\hyperlink{_text_log_8cpp_acd4d3023d24d5314b895981b17825666}{L\+O\+G\+\_\+\+D\+I\+R} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{作者}
+Debug\+Go 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{版本}
+1.\+0.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{日期}
+2014-\/7-\/31 
+\end{DoxyDate}
+
+
+\subsection{宏定义说明}
+\hypertarget{_text_log_8h_ae08be36736eeab5ded1bd3a063073dcc}{\index{Text\+Log.\+h@{Text\+Log.\+h}!\+\_\+\+\_\+\+T\+F\+I\+L\+E\+\_\+\+\_\+@{\+\_\+\+\_\+\+T\+F\+I\+L\+E\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+T\+F\+I\+L\+E\+\_\+\+\_\+@{\+\_\+\+\_\+\+T\+F\+I\+L\+E\+\_\+\+\_\+}!Text\+Log.\+h@{Text\+Log.\+h}}
+\subsubsection[{\+\_\+\+\_\+\+T\+F\+I\+L\+E\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+T\+F\+I\+L\+E\+\_\+\+\_\+~\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+}}\label{_text_log_8h_ae08be36736eeab5ded1bd3a063073dcc}
+
+
+输出ansi编码的源文件名 
+
+\hypertarget{_text_log_8h_ab29daf9fd2350c20c232c4deb3dbff9b}{\index{Text\+Log.\+h@{Text\+Log.\+h}!\+\_\+\+\_\+\+T\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+@{\+\_\+\+\_\+\+T\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+T\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+@{\+\_\+\+\_\+\+T\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}!Text\+Log.\+h@{Text\+Log.\+h}}
+\subsubsection[{\+\_\+\+\_\+\+T\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+T\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+~\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}}\label{_text_log_8h_ab29daf9fd2350c20c232c4deb3dbff9b}
+
+
+输出ansi编码的方法名 
+
+\hypertarget{_text_log_8h_aa50218d805518247edfff3d9328be684}{\index{Text\+Log.\+h@{Text\+Log.\+h}!\+\_\+\+\_\+\+W\+F\+I\+L\+E\+\_\+\+\_\+@{\+\_\+\+\_\+\+W\+F\+I\+L\+E\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+W\+F\+I\+L\+E\+\_\+\+\_\+@{\+\_\+\+\_\+\+W\+F\+I\+L\+E\+\_\+\+\_\+}!Text\+Log.\+h@{Text\+Log.\+h}}
+\subsubsection[{\+\_\+\+\_\+\+W\+F\+I\+L\+E\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+W\+F\+I\+L\+E\+\_\+\+\_\+~{\bf W\+I\+D\+E\+N}(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+)}}\label{_text_log_8h_aa50218d805518247edfff3d9328be684}
+
+
+输出当前源文件名 
+
+\begin{DoxySeeAlso}{参见}
+W\+I\+N\+D\+E\+N 
+\end{DoxySeeAlso}
+\hypertarget{_text_log_8h_a8e897d3bdcc661b96874476f2b1ee535}{\index{Text\+Log.\+h@{Text\+Log.\+h}!\+\_\+\+\_\+\+W\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+@{\+\_\+\+\_\+\+W\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+W\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+@{\+\_\+\+\_\+\+W\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}!Text\+Log.\+h@{Text\+Log.\+h}}
+\subsubsection[{\+\_\+\+\_\+\+W\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+W\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+~{\bf W\+I\+D\+E\+N}(\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+)}}\label{_text_log_8h_a8e897d3bdcc661b96874476f2b1ee535}
+
+
+获得unicode编码的方法名 
+
+\hypertarget{_text_log_8h_afa0499dcb85922b683da3918f512adb6}{\index{Text\+Log.\+h@{Text\+Log.\+h}!L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E@{L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}}
+\index{L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E@{L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}!Text\+Log.\+h@{Text\+Log.\+h}}
+\subsubsection[{L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E~(1024)}}\label{_text_log_8h_afa0499dcb85922b683da3918f512adb6}
+
+
+每条日志最大长度. 
+
+\hypertarget{_text_log_8h_a91d933cd369a295f1299a8eec2f6ef60}{\index{Text\+Log.\+h@{Text\+Log.\+h}!W\+I\+D\+E\+N@{W\+I\+D\+E\+N}}
+\index{W\+I\+D\+E\+N@{W\+I\+D\+E\+N}!Text\+Log.\+h@{Text\+Log.\+h}}
+\subsubsection[{W\+I\+D\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+I\+D\+E\+N(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~{\bf W\+I\+D\+E\+N2}(x)}}\label{_text_log_8h_a91d933cd369a295f1299a8eec2f6ef60}
+
+
+输出unicode编码 
+
+\begin{DoxySeeAlso}{参见}
+W\+I\+N\+D\+E\+N2 
+\end{DoxySeeAlso}
+\hypertarget{_text_log_8h_ad36399393da65b6f3b338cccfa4bb831}{\index{Text\+Log.\+h@{Text\+Log.\+h}!W\+I\+D\+E\+N2@{W\+I\+D\+E\+N2}}
+\index{W\+I\+D\+E\+N2@{W\+I\+D\+E\+N2}!Text\+Log.\+h@{Text\+Log.\+h}}
+\subsubsection[{W\+I\+D\+E\+N2}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+I\+D\+E\+N2(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~L \#\# x}}\label{_text_log_8h_ad36399393da65b6f3b338cccfa4bb831}
+
+
+窄字符前加上\char`\"{}\+L\char`\"{}. 
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries W\+F\+U\+N\+C\+T\+I\+O\+N} 
+\end{DoxySeeAlso}
+\hypertarget{_text_log_8h_a8795752c1e91643285740272e71338fc}{\index{Text\+Log.\+h@{Text\+Log.\+h}!W\+R\+I\+T\+E\+\_\+\+L\+O\+G@{W\+R\+I\+T\+E\+\_\+\+L\+O\+G}}
+\index{W\+R\+I\+T\+E\+\_\+\+L\+O\+G@{W\+R\+I\+T\+E\+\_\+\+L\+O\+G}!Text\+Log.\+h@{Text\+Log.\+h}}
+\subsubsection[{W\+R\+I\+T\+E\+\_\+\+L\+O\+G}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+R\+I\+T\+E\+\_\+\+L\+O\+G(
+\begin{DoxyParamCaption}
+\item[{}]{level, }
+\item[{}]{format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~g\+\_\+logger.\+Add\+T\+Log(true,level, {\bf \+\_\+\+\_\+\+T\+F\+I\+L\+E\+\_\+\+\_\+}, {\bf \+\_\+\+\_\+\+T\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, format,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}}\label{_text_log_8h_a8795752c1e91643285740272e71338fc}
+
+
+写入一行日志,并自动追加换行符. 
+
+\hypertarget{_text_log_8h_ac434706ba87ba81884db819ad81a599a}{\index{Text\+Log.\+h@{Text\+Log.\+h}!W\+R\+I\+T\+E\+\_\+\+L\+O\+G\+L\+I\+N\+E@{W\+R\+I\+T\+E\+\_\+\+L\+O\+G\+L\+I\+N\+E}}
+\index{W\+R\+I\+T\+E\+\_\+\+L\+O\+G\+L\+I\+N\+E@{W\+R\+I\+T\+E\+\_\+\+L\+O\+G\+L\+I\+N\+E}!Text\+Log.\+h@{Text\+Log.\+h}}
+\subsubsection[{W\+R\+I\+T\+E\+\_\+\+L\+O\+G\+L\+I\+N\+E}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+R\+I\+T\+E\+\_\+\+L\+O\+G\+L\+I\+N\+E(
+\begin{DoxyParamCaption}
+\item[{}]{level, }
+\item[{}]{format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)~g\+\_\+logger.\+Add\+T\+Log(false,level, {\bf \+\_\+\+\_\+\+T\+F\+I\+L\+E\+\_\+\+\_\+}, {\bf \+\_\+\+\_\+\+T\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, format,\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}}\label{_text_log_8h_ac434706ba87ba81884db819ad81a599a}
+
+
+写入一行日志,但不追加换行符. 
+

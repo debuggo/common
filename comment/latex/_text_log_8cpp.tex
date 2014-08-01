@@ -1,0 +1,67 @@
+\hypertarget{_text_log_8cpp}{\section{common\+\_\+log/\+Text\+Log.cpp 文件参考}
+\label{_text_log_8cpp}\index{common\+\_\+log/\+Text\+Log.\+cpp@{common\+\_\+log/\+Text\+Log.\+cpp}}
+}
+
+
+C\+Text\+Log的实现文件.  
+
+
+{\ttfamily \#include \char`\"{}Text\+Log.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../common/common.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}string\char`\"{}}\\*
+Text\+Log.\+cpp 的引用(Include)关系图\+:
+\subsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecommon}{common}
+\begin{DoxyCompactList}\small\item\em 常用类库命名空间 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_text_log_8cpp_adb33fb4c55f382cae1cd78dbeeb021f4}{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+T\+R}~(\char`\"{}\mbox{[}调试\mbox{]}\char`\"{})
+\item 
+\#define \hyperlink{_text_log_8cpp_aac42314265aad3c4254e80cc7483180f}{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+F\+O\+\_\+\+S\+T\+R}~(\char`\"{}\mbox{[}信息\mbox{]}\char`\"{})
+\item 
+\#define \hyperlink{_text_log_8cpp_a8af9927412afe40958e34d8e6be83ff0}{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N\+\_\+\+S\+T\+R}~(\char`\"{}\mbox{[}警告\mbox{]}\char`\"{})
+\item 
+\#define \hyperlink{_text_log_8cpp_ae8f3353ecf25a308a81603c0aa17eb20}{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R}~(\char`\"{}\mbox{[}错误\mbox{]}\char`\"{})
+\item 
+\#define \hyperlink{_text_log_8cpp_a2d6d6a1c5544ea122132e94f359017e6}{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+A\+L\+\_\+\+S\+T\+R}~(\char`\"{}\mbox{[}崩溃\mbox{]}\char`\"{})
+\item 
+\#define \hyperlink{_text_log_8cpp_acd4d3023d24d5314b895981b17825666}{L\+O\+G\+\_\+\+D\+I\+R}~\+\_\+\+T(\char`\"{}\textbackslash{}\textbackslash{}L\+O\+G\textbackslash{}\textbackslash{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em 日志文件存放目录. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+C\+Text\+Log \hyperlink{namespacecommon_a13e1e17aa404f3e915f640602c208924}{common\+::g\+\_\+logger}
+\begin{DoxyCompactList}\small\item\em 全局日志类. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+C\+Text\+Log的实现文件. 
+
+
+
+\subsection{宏定义说明}
+\hypertarget{_text_log_8cpp_acd4d3023d24d5314b895981b17825666}{\index{Text\+Log.\+cpp@{Text\+Log.\+cpp}!L\+O\+G\+\_\+\+D\+I\+R@{L\+O\+G\+\_\+\+D\+I\+R}}
+\index{L\+O\+G\+\_\+\+D\+I\+R@{L\+O\+G\+\_\+\+D\+I\+R}!Text\+Log.\+cpp@{Text\+Log.\+cpp}}
+\subsubsection[{L\+O\+G\+\_\+\+D\+I\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+O\+G\+\_\+\+D\+I\+R~\+\_\+\+T(\char`\"{}\textbackslash{}\textbackslash{}L\+O\+G\textbackslash{}\textbackslash{}\char`\"{})}}\label{_text_log_8cpp_acd4d3023d24d5314b895981b17825666}
+
+
+日志文件存放目录. 
+
+\hypertarget{_text_log_8cpp_adb33fb4c55f382cae1cd78dbeeb021f4}{\index{Text\+Log.\+cpp@{Text\+Log.\+cpp}!L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+T\+R@{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+T\+R}}
+\index{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+T\+R@{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+T\+R}!Text\+Log.\+cpp@{Text\+Log.\+cpp}}
+\subsubsection[{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+T\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+U\+G\+\_\+\+S\+T\+R~(\char`\"{}\mbox{[}调试\mbox{]}\char`\"{})}}\label{_text_log_8cpp_adb33fb4c55f382cae1cd78dbeeb021f4}
+\hypertarget{_text_log_8cpp_ae8f3353ecf25a308a81603c0aa17eb20}{\index{Text\+Log.\+cpp@{Text\+Log.\+cpp}!L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R@{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R}}
+\index{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R@{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R}!Text\+Log.\+cpp@{Text\+Log.\+cpp}}
+\subsubsection[{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+R~(\char`\"{}\mbox{[}错误\mbox{]}\char`\"{})}}\label{_text_log_8cpp_ae8f3353ecf25a308a81603c0aa17eb20}
+\hypertarget{_text_log_8cpp_a2d6d6a1c5544ea122132e94f359017e6}{\index{Text\+Log.\+cpp@{Text\+Log.\+cpp}!L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+A\+L\+\_\+\+S\+T\+R@{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+A\+L\+\_\+\+S\+T\+R}}
+\index{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+A\+L\+\_\+\+S\+T\+R@{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+A\+L\+\_\+\+S\+T\+R}!Text\+Log.\+cpp@{Text\+Log.\+cpp}}
+\subsubsection[{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+A\+L\+\_\+\+S\+T\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+A\+L\+\_\+\+S\+T\+R~(\char`\"{}\mbox{[}崩溃\mbox{]}\char`\"{})}}\label{_text_log_8cpp_a2d6d6a1c5544ea122132e94f359017e6}
+\hypertarget{_text_log_8cpp_aac42314265aad3c4254e80cc7483180f}{\index{Text\+Log.\+cpp@{Text\+Log.\+cpp}!L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+F\+O\+\_\+\+S\+T\+R@{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+F\+O\+\_\+\+S\+T\+R}}
+\index{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+F\+O\+\_\+\+S\+T\+R@{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+F\+O\+\_\+\+S\+T\+R}!Text\+Log.\+cpp@{Text\+Log.\+cpp}}
+\subsubsection[{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+F\+O\+\_\+\+S\+T\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+F\+O\+\_\+\+S\+T\+R~(\char`\"{}\mbox{[}信息\mbox{]}\char`\"{})}}\label{_text_log_8cpp_aac42314265aad3c4254e80cc7483180f}
+\hypertarget{_text_log_8cpp_a8af9927412afe40958e34d8e6be83ff0}{\index{Text\+Log.\+cpp@{Text\+Log.\+cpp}!L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N\+\_\+\+S\+T\+R@{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N\+\_\+\+S\+T\+R}}
+\index{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N\+\_\+\+S\+T\+R@{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N\+\_\+\+S\+T\+R}!Text\+Log.\+cpp@{Text\+Log.\+cpp}}
+\subsubsection[{L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N\+\_\+\+S\+T\+R}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N\+\_\+\+S\+T\+R~(\char`\"{}\mbox{[}警告\mbox{]}\char`\"{})}}\label{_text_log_8cpp_a8af9927412afe40958e34d8e6be83ff0}

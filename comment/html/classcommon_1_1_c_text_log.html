@@ -1,0 +1,755 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>common functions: common::CTextLog类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">common functions
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacecommon.html">common</a></li><li class="navelem"><a class="el" href="classcommon_1_1_c_text_log.html">CTextLog</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classcommon_1_1_c_text_log-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">common::CTextLog类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>操作日志类.  
+ <a href="classcommon_1_1_c_text_log.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_text_log_8h_source.html">TextLog.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ab0c8fabb54ada6443cadd1fbfe65cf2e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2e">ENUM_LOG_MODE</a> { <a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2eaa76de1b0920b606311d0d521477a0731">LOG_MODE_DIRECT</a> = 0, 
+<a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2ea1e90774c6da95492d7d46f9434c7fbde">LOG_MODE_DELAY</a> = 1
+ }</td></tr>
+<tr class="memdesc:ab0c8fabb54ada6443cadd1fbfe65cf2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志输出模式  <a href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2e">更多...</a><br /></td></tr>
+<tr class="separator:ab0c8fabb54ada6443cadd1fbfe65cf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22e9f5eba143051e1193e62caf63aee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aee">ENUM_LOG_LEVEL</a> { <a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aeea739a7f4691e3b1be02413e0a4d552003">LOG_WRITE_NONE</a> = 0, 
+<a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aeeac94e3280bfd3f0db406af28530143da1">LOG_WRITE_ERROR</a> = 1, 
+<a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aeea82cd6c1e7f3371a99033a06cdaf23a81">LOG_WRITE_INFO</a> = 2, 
+<a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aeea7ab4c59a70fe3bf1c63c45e7183a0326">LOG_WRITE_ALL</a> = 3
+ }</td></tr>
+<tr class="memdesc:ae22e9f5eba143051e1193e62caf63aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志输出级别  <a href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aee">更多...</a><br /></td></tr>
+<tr class="separator:ae22e9f5eba143051e1193e62caf63aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a77d68466b36334d333ba59e91e8055b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#a77d68466b36334d333ba59e91e8055b2">CTextLog</a> (<a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aee">ENUM_LOG_LEVEL</a> level=<a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aeea7ab4c59a70fe3bf1c63c45e7183a0326">LOG_WRITE_ALL</a>, <a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2e">ENUM_LOG_MODE</a> writemode=<a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2eaa76de1b0920b606311d0d521477a0731">LOG_MODE_DIRECT</a>, LPCTSTR lpLogName=NULL)</td></tr>
+<tr class="memdesc:a77d68466b36334d333ba59e91e8055b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">CTextLog的默认构造函数,理论上来说无需手动调用.  <a href="#a77d68466b36334d333ba59e91e8055b2">更多...</a><br /></td></tr>
+<tr class="separator:a77d68466b36334d333ba59e91e8055b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a77b26b4412151dd5a655903b652633"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#a1a77b26b4412151dd5a655903b652633">~CTextLog</a> ()</td></tr>
+<tr class="memdesc:a1a77b26b4412151dd5a655903b652633"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数,会在内部调用close().  <a href="#a1a77b26b4412151dd5a655903b652633">更多...</a><br /></td></tr>
+<tr class="separator:a1a77b26b4412151dd5a655903b652633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ecacf46cb9b0284ba3acd8c3b1d082"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#a53ecacf46cb9b0284ba3acd8c3b1d082">SetMode</a> (<a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aee">ENUM_LOG_LEVEL</a> level, <a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2e">ENUM_LOG_MODE</a> writemode)</td></tr>
+<tr class="memdesc:a53ecacf46cb9b0284ba3acd8c3b1d082"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置日志记录模式,  <a href="#a53ecacf46cb9b0284ba3acd8c3b1d082">更多...</a><br /></td></tr>
+<tr class="separator:a53ecacf46cb9b0284ba3acd8c3b1d082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df32e6ff0a7c85c76b894bdf1a36103"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#a2df32e6ff0a7c85c76b894bdf1a36103">AddTLog</a> (bool bAddLine, <a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589">ENUM_LOG_LINE_LEVEL</a> level, LPCTSTR szSrc, LPCTSTR szFunc, ULONG uLine, const WCHAR *format,...)</td></tr>
+<tr class="memdesc:a2df32e6ff0a7c85c76b894bdf1a36103"><td class="mdescLeft">&#160;</td><td class="mdescRight">增加一条日志.  <a href="#a2df32e6ff0a7c85c76b894bdf1a36103">更多...</a><br /></td></tr>
+<tr class="separator:a2df32e6ff0a7c85c76b894bdf1a36103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac795cde93dff7db43cb22ce9d351071f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#ac795cde93dff7db43cb22ce9d351071f">AddTLog</a> (bool bAddLine, <a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589">ENUM_LOG_LINE_LEVEL</a> level, LPCTSTR szSrc, LPCTSTR szFunc, ULONG uLine, const CHAR *format,...)</td></tr>
+<tr class="memdesc:ac795cde93dff7db43cb22ce9d351071f"><td class="mdescLeft">&#160;</td><td class="mdescRight">增加一条ansi编码的日志,在调用WRITE_LOG及WRITE_LOGLINE时会调用该方法.  <a href="#ac795cde93dff7db43cb22ce9d351071f">更多...</a><br /></td></tr>
+<tr class="separator:ac795cde93dff7db43cb22ce9d351071f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a5cad31ca8ab60776c16ec4ab0a1f0165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#a5cad31ca8ab60776c16ec4ab0a1f0165">Close</a> ()</td></tr>
+<tr class="memdesc:a5cad31ca8ab60776c16ec4ab0a1f0165"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭文件句柄  <a href="#a5cad31ca8ab60776c16ec4ab0a1f0165">更多...</a><br /></td></tr>
+<tr class="separator:a5cad31ca8ab60776c16ec4ab0a1f0165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcda3237d33ad68a499523ed202634e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#afcda3237d33ad68a499523ed202634e7">CreateNewLogFile</a> ()</td></tr>
+<tr class="memdesc:afcda3237d33ad68a499523ed202634e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">按日期创建新的日志文件按"processname+yyyymmdd.log"格式创建.  <a href="#afcda3237d33ad68a499523ed202634e7">更多...</a><br /></td></tr>
+<tr class="separator:afcda3237d33ad68a499523ed202634e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a1e17cd173b1b0f1fe7dcd68a2dbdbe34"><td class="memItemLeft" align="right" valign="top">TCHAR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#a1e17cd173b1b0f1fe7dcd68a2dbdbe34">m_strFileName</a> [MAX_PATH]</td></tr>
+<tr class="memdesc:a1e17cd173b1b0f1fe7dcd68a2dbdbe34"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志文件完整路径.  <a href="#a1e17cd173b1b0f1fe7dcd68a2dbdbe34">更多...</a><br /></td></tr>
+<tr class="separator:a1e17cd173b1b0f1fe7dcd68a2dbdbe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6715190bbbdc7f30a28c71b808db3d"><td class="memItemLeft" align="right" valign="top">TCHAR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#aca6715190bbbdc7f30a28c71b808db3d">m_szCurPath</a> [MAX_PATH]</td></tr>
+<tr class="memdesc:aca6715190bbbdc7f30a28c71b808db3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志文件存放路径.  <a href="#aca6715190bbbdc7f30a28c71b808db3d">更多...</a><br /></td></tr>
+<tr class="separator:aca6715190bbbdc7f30a28c71b808db3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e97e2cd0b36c02f51a2affd016acbb"><td class="memItemLeft" align="right" valign="top">TCHAR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#a05e97e2cd0b36c02f51a2affd016acbb">m_szFileName</a> [MAX_PATH]</td></tr>
+<tr class="memdesc:a05e97e2cd0b36c02f51a2affd016acbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志文件名.  <a href="#a05e97e2cd0b36c02f51a2affd016acbb">更多...</a><br /></td></tr>
+<tr class="separator:a05e97e2cd0b36c02f51a2affd016acbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee55c31c87ce36ba34f11e7503355351"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#aee55c31c87ce36ba34f11e7503355351">m_file</a></td></tr>
+<tr class="memdesc:aee55c31c87ce36ba34f11e7503355351"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志文件句柄.  <a href="#aee55c31c87ce36ba34f11e7503355351">更多...</a><br /></td></tr>
+<tr class="separator:aee55c31c87ce36ba34f11e7503355351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60caf7016e093cc7276e27a3a60f22d"><td class="memItemLeft" align="right" valign="top">SYSTEMTIME&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#ab60caf7016e093cc7276e27a3a60f22d">m_createtime</a></td></tr>
+<tr class="memdesc:ab60caf7016e093cc7276e27a3a60f22d"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志创建时间.  <a href="#ab60caf7016e093cc7276e27a3a60f22d">更多...</a><br /></td></tr>
+<tr class="separator:ab60caf7016e093cc7276e27a3a60f22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad800d8c6a9cfb7357da2044cf4deeb25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aee">ENUM_LOG_LEVEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#ad800d8c6a9cfb7357da2044cf4deeb25">m_level</a></td></tr>
+<tr class="memdesc:ad800d8c6a9cfb7357da2044cf4deeb25"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志输出级别, 默认为3, 输出所有日志.  <a href="#ad800d8c6a9cfb7357da2044cf4deeb25">更多...</a><br /></td></tr>
+<tr class="separator:ad800d8c6a9cfb7357da2044cf4deeb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4007ae4cddee7343b9fd158ca6d07d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2e">ENUM_LOG_MODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#a3c4007ae4cddee7343b9fd158ca6d07d">m_mode</a></td></tr>
+<tr class="memdesc:a3c4007ae4cddee7343b9fd158ca6d07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志输出模式: 直接,延迟, 默认为直接, 延迟模式为每大于9*LINE_BUFFER_SIZE输出一次.  <a href="#a3c4007ae4cddee7343b9fd158ca6d07d">更多...</a><br /></td></tr>
+<tr class="separator:a3c4007ae4cddee7343b9fd158ca6d07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404b1bc0f4585481dfccb0b73fe4d388"><td class="memItemLeft" align="right" valign="top">CHAR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#a404b1bc0f4585481dfccb0b73fe4d388">m_buffer</a> [10 *<a class="el" href="_text_log_8h.html#afa0499dcb85922b683da3918f512adb6">LINE_BUFFER_SIZE</a>]</td></tr>
+<tr class="memdesc:a404b1bc0f4585481dfccb0b73fe4d388"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志缓存.  <a href="#a404b1bc0f4585481dfccb0b73fe4d388">更多...</a><br /></td></tr>
+<tr class="separator:a404b1bc0f4585481dfccb0b73fe4d388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a674dc6bfc676698846a7f8fee11f2e83"><td class="memItemLeft" align="right" valign="top">CRITICAL_SECTION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommon_1_1_c_text_log.html#a674dc6bfc676698846a7f8fee11f2e83">m_cs</a></td></tr>
+<tr class="memdesc:a674dc6bfc676698846a7f8fee11f2e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局互斥体用于同步.  <a href="#a674dc6bfc676698846a7f8fee11f2e83">更多...</a><br /></td></tr>
+<tr class="separator:a674dc6bfc676698846a7f8fee11f2e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>操作日志类. </p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a class="anchor" id="ae22e9f5eba143051e1193e62caf63aee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aee">common::CTextLog::ENUM_LOG_LEVEL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>日志输出级别 </p>
+<dl class="section note"><dt>注解</dt><dd>用作构造函数参数 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ae22e9f5eba143051e1193e62caf63aeea739a7f4691e3b1be02413e0a4d552003"></a>LOG_WRITE_NONE&#160;</td><td class="fielddoc">
+<p>关闭日志 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae22e9f5eba143051e1193e62caf63aeeac94e3280bfd3f0db406af28530143da1"></a>LOG_WRITE_ERROR&#160;</td><td class="fielddoc">
+<p>输出警告级别以上的日志 (日志量极小) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae22e9f5eba143051e1193e62caf63aeea82cd6c1e7f3371a99033a06cdaf23a81"></a>LOG_WRITE_INFO&#160;</td><td class="fielddoc">
+<p>输出信息级别以上的日志 (不包括调试日志,一般是这个级别) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae22e9f5eba143051e1193e62caf63aeea7ab4c59a70fe3bf1c63c45e7183a0326"></a>LOG_WRITE_ALL&#160;</td><td class="fielddoc">
+<p>输出调试级别以上的日志 (所有日志,包括调试日志) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ab0c8fabb54ada6443cadd1fbfe65cf2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2e">common::CTextLog::ENUM_LOG_MODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>日志输出模式 </p>
+<dl class="section note"><dt>注解</dt><dd>用作构造函数参数. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ab0c8fabb54ada6443cadd1fbfe65cf2eaa76de1b0920b606311d0d521477a0731"></a>LOG_MODE_DIRECT&#160;</td><td class="fielddoc">
+<p>直接输出日志. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab0c8fabb54ada6443cadd1fbfe65cf2ea1e90774c6da95492d7d46f9434c7fbde"></a>LOG_MODE_DELAY&#160;</td><td class="fielddoc">
+<p>延迟输出日志. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a77d68466b36334d333ba59e91e8055b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">common::CTextLog::CTextLog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aee">ENUM_LOG_LEVEL</a>&#160;</td>
+          <td class="paramname"><em>level</em> = <code><a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aeea7ab4c59a70fe3bf1c63c45e7183a0326">LOG_WRITE_ALL</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2e">ENUM_LOG_MODE</a>&#160;</td>
+          <td class="paramname"><em>writemode</em> = <code><a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2eaa76de1b0920b606311d0d521477a0731">LOG_MODE_DIRECT</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpLogName</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CTextLog的默认构造函数,理论上来说无需手动调用. </p>
+<p>将在方法内创建当日的日志文件. 默认构造函数. </p><dl class="section note"><dt>注解</dt><dd>无需调用,会在初始化的时候由全局变量g_logger来创建. </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>7/31/2014 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>日志等级. </td></tr>
+    <tr><td class="paramname">writemode</td><td>写入模式. </td></tr>
+    <tr><td class="paramname">lpLogName</td><td>日志文件名称,将在构造函数内部自动创建. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2e" title="日志输出模式 ">ENUM_LOG_MODE</a> <a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aee" title="日志输出级别 ">ENUM_LOG_LEVEL</a> <a class="el" href="_text_log_8cpp.html#acd4d3023d24d5314b895981b17825666" title="日志文件存放目录. ">LOG_DIR</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1a77b26b4412151dd5a655903b652633"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">common::CTextLog::~CTextLog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数,会在内部调用close(). </p>
+<dl class="section author"><dt>作者</dt><dd>Debug Go </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>8/1/2014 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classcommon_1_1_c_text_log.html#a5cad31ca8ab60776c16ec4ab0a1f0165" title="关闭文件句柄 ">Close()</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a2df32e6ff0a7c85c76b894bdf1a36103"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void common::CTextLog::AddTLog </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAddLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589">ENUM_LOG_LINE_LEVEL</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>szSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>szFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ULONG&#160;</td>
+          <td class="paramname"><em>uLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const WCHAR *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>增加一条日志. </p>
+<p>增加一条unicode编码的日志,在调用WRITE_LOG及WRITE_LOGLINE时会调用该方法. </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bAddLine</td><td>true 在末尾加入换行符. </td></tr>
+    <tr><td class="paramname">level</td><td>日志信息等级. </td></tr>
+    <tr><td class="paramname">szSrc</td><td>输出日志的源文件名. </td></tr>
+    <tr><td class="paramname">szFunc</td><td>输出日志的方法名. </td></tr>
+    <tr><td class="paramname">uLine</td><td>输出日志所在的行号. </td></tr>
+    <tr><td class="paramname">format</td><td>日志的内容. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="_text_log_8h.html#a8795752c1e91643285740272e71338fc" title="写入一行日志,并自动追加换行符. ">WRITE_LOG</a> <a class="el" href="_text_log_8h.html#ac434706ba87ba81884db819ad81a599a" title="写入一行日志,但不追加换行符. ">WRITE_LOGLINE</a> </dd>
+<dd>
+<a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589" title="日志信息的等级 ">ENUM_LOG_LINE_LEVEL</a> <b>WFILE</b> <b>TFUNCTION</b> <b>LINE</b> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac795cde93dff7db43cb22ce9d351071f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void common::CTextLog::AddTLog </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAddLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589">ENUM_LOG_LINE_LEVEL</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>szSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>szFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ULONG&#160;</td>
+          <td class="paramname"><em>uLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CHAR *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>增加一条ansi编码的日志,在调用WRITE_LOG及WRITE_LOGLINE时会调用该方法. </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classcommon_1_1_c_text_log.html#a2df32e6ff0a7c85c76b894bdf1a36103" title="增加一条日志. ">AddTLog</a>(bool bAddLine, <a class="el" href="namespacecommon.html#af715c011984b434cbb7f04b0d4e57589" title="日志信息的等级 ">ENUM_LOG_LINE_LEVEL</a> level, LPCTSTR szSrc, LPCTSTR szFunc, ULONG uLine, const WCHAR* format, ...); </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5cad31ca8ab60776c16ec4ab0a1f0165"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void common::CTextLog::Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>关闭文件句柄 </p>
+<dl class="section author"><dt>作者</dt><dd>Debug Go </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>8/1/2014 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classcommon_1_1_c_text_log.html#aee55c31c87ce36ba34f11e7503355351" title="日志文件句柄. ">m_file</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afcda3237d33ad68a499523ed202634e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void common::CTextLog::CreateNewLogFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>按日期创建新的日志文件按"processname+yyyymmdd.log"格式创建. </p>
+<p>创建一个新的日志文件. </p><dl class="section author"><dt>作者</dt><dd>Debug Go </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>8/1/2014 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">如果创建失败会抛出异常,有可能是文件无法正常创建导致的.</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a53ecacf46cb9b0284ba3acd8c3b1d082"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void common::CTextLog::SetMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aee">ENUM_LOG_LEVEL</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2e">ENUM_LOG_MODE</a>&#160;</td>
+          <td class="paramname"><em>writemode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置日志记录模式, </p>
+<dl class="section author"><dt>作者</dt><dd>Debug Go </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>7/31/2014</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>输出等级. </td></tr>
+    <tr><td class="paramname">writemode</td><td>写入模式. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a404b1bc0f4585481dfccb0b73fe4d388"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR common::CTextLog::m_buffer[10 *<a class="el" href="_text_log_8h.html#afa0499dcb85922b683da3918f512adb6">LINE_BUFFER_SIZE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>日志缓存. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab60caf7016e093cc7276e27a3a60f22d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SYSTEMTIME common::CTextLog::m_createtime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>日志创建时间. </p>
+
+</div>
+</div>
+<a class="anchor" id="a674dc6bfc676698846a7f8fee11f2e83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRITICAL_SECTION common::CTextLog::m_cs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全局互斥体用于同步. </p>
+
+</div>
+</div>
+<a class="anchor" id="aee55c31c87ce36ba34f11e7503355351"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HANDLE common::CTextLog::m_file</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>日志文件句柄. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad800d8c6a9cfb7357da2044cf4deeb25"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcommon_1_1_c_text_log.html#ae22e9f5eba143051e1193e62caf63aee">ENUM_LOG_LEVEL</a> common::CTextLog::m_level</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>日志输出级别, 默认为3, 输出所有日志. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3c4007ae4cddee7343b9fd158ca6d07d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcommon_1_1_c_text_log.html#ab0c8fabb54ada6443cadd1fbfe65cf2e">ENUM_LOG_MODE</a> common::CTextLog::m_mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>日志输出模式: 直接,延迟, 默认为直接, 延迟模式为每大于9*LINE_BUFFER_SIZE输出一次. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1e17cd173b1b0f1fe7dcd68a2dbdbe34"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TCHAR common::CTextLog::m_strFileName[MAX_PATH]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>日志文件完整路径. </p>
+
+</div>
+</div>
+<a class="anchor" id="aca6715190bbbdc7f30a28c71b808db3d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TCHAR common::CTextLog::m_szCurPath[MAX_PATH]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>日志文件存放路径. </p>
+
+</div>
+</div>
+<a class="anchor" id="a05e97e2cd0b36c02f51a2affd016acbb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TCHAR common::CTextLog::m_szFileName[MAX_PATH]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>日志文件名. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>common_log/<a class="el" href="_text_log_8h_source.html">TextLog.h</a></li>
+<li>common_log/<a class="el" href="_text_log_8cpp.html">TextLog.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 八月 1日 星期五 18:34:01 , 为 common functions使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

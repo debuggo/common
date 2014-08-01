@@ -1,0 +1,367 @@
+\hypertarget{classcommon_1_1_c_text_log}{\section{common\+:\+:C\+Text\+Log类 参考}
+\label{classcommon_1_1_c_text_log}\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+}
+
+
+操作日志类.  
+
+
+
+
+{\ttfamily \#include $<$Text\+Log.\+h$>$}
+
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2e}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E} \{ \hyperlink{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2eaa76de1b0920b606311d0d521477a0731}{L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+R\+E\+C\+T} = 0, 
+\hyperlink{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2ea1e90774c6da95492d7d46f9434c7fbde}{L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+L\+A\+Y} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em 日志输出模式 \end{DoxyCompactList}\item 
+enum \hyperlink{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aee}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L} \{ \hyperlink{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeea739a7f4691e3b1be02413e0a4d552003}{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+N\+O\+N\+E} = 0, 
+\hyperlink{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeeac94e3280bfd3f0db406af28530143da1}{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+E\+R\+R\+O\+R} = 1, 
+\hyperlink{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeea82cd6c1e7f3371a99033a06cdaf23a81}{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+I\+N\+F\+O} = 2, 
+\hyperlink{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeea7ab4c59a70fe3bf1c63c45e7183a0326}{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+A\+L\+L} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em 日志输出级别 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcommon_1_1_c_text_log_a77d68466b36334d333ba59e91e8055b2}{C\+Text\+Log} (\hyperlink{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aee}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L} level=\hyperlink{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeea7ab4c59a70fe3bf1c63c45e7183a0326}{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+A\+L\+L}, \hyperlink{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2e}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E} writemode=\hyperlink{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2eaa76de1b0920b606311d0d521477a0731}{L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+R\+E\+C\+T}, L\+P\+C\+T\+S\+T\+R lp\+Log\+Name=N\+U\+L\+L)
+\begin{DoxyCompactList}\small\item\em C\+Text\+Log的默认构造函数,理论上来说无需手动调用. \end{DoxyCompactList}\item 
+virtual \hyperlink{classcommon_1_1_c_text_log_a1a77b26b4412151dd5a655903b652633}{$\sim$\+C\+Text\+Log} ()
+\begin{DoxyCompactList}\small\item\em 析构函数,会在内部调用close(). \end{DoxyCompactList}\item 
+void \hyperlink{classcommon_1_1_c_text_log_a53ecacf46cb9b0284ba3acd8c3b1d082}{Set\+Mode} (\hyperlink{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aee}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L} level, \hyperlink{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2e}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E} writemode)
+\begin{DoxyCompactList}\small\item\em 设置日志记录模式, \end{DoxyCompactList}\item 
+void \hyperlink{classcommon_1_1_c_text_log_a2df32e6ff0a7c85c76b894bdf1a36103}{Add\+T\+Log} (bool b\+Add\+Line, \hyperlink{namespacecommon_af715c011984b434cbb7f04b0d4e57589}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+V\+E\+L} level, L\+P\+C\+T\+S\+T\+R sz\+Src, L\+P\+C\+T\+S\+T\+R sz\+Func, U\+L\+O\+N\+G u\+Line, const W\+C\+H\+A\+R $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em 增加一条日志. \end{DoxyCompactList}\item 
+void \hyperlink{classcommon_1_1_c_text_log_ac795cde93dff7db43cb22ce9d351071f}{Add\+T\+Log} (bool b\+Add\+Line, \hyperlink{namespacecommon_af715c011984b434cbb7f04b0d4e57589}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+V\+E\+L} level, L\+P\+C\+T\+S\+T\+R sz\+Src, L\+P\+C\+T\+S\+T\+R sz\+Func, U\+L\+O\+N\+G u\+Line, const C\+H\+A\+R $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em 增加一条ansi编码的日志,在调用\+W\+R\+I\+T\+E\+\_\+\+L\+O\+G及\+W\+R\+I\+T\+E\+\_\+\+L\+O\+G\+L\+I\+N\+E时会调用该方法. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcommon_1_1_c_text_log_a5cad31ca8ab60776c16ec4ab0a1f0165}{Close} ()
+\begin{DoxyCompactList}\small\item\em 关闭文件句柄 \end{DoxyCompactList}\item 
+void \hyperlink{classcommon_1_1_c_text_log_afcda3237d33ad68a499523ed202634e7}{Create\+New\+Log\+File} ()
+\begin{DoxyCompactList}\small\item\em 按日期创建新的日志文件按\char`\"{}processname+yyyymmdd.\+log\char`\"{}格式创建. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+T\+C\+H\+A\+R \hyperlink{classcommon_1_1_c_text_log_a1e17cd173b1b0f1fe7dcd68a2dbdbe34}{m\+\_\+str\+File\+Name} \mbox{[}M\+A\+X\+\_\+\+P\+A\+T\+H\mbox{]}
+\begin{DoxyCompactList}\small\item\em 日志文件完整路径. \end{DoxyCompactList}\item 
+T\+C\+H\+A\+R \hyperlink{classcommon_1_1_c_text_log_aca6715190bbbdc7f30a28c71b808db3d}{m\+\_\+sz\+Cur\+Path} \mbox{[}M\+A\+X\+\_\+\+P\+A\+T\+H\mbox{]}
+\begin{DoxyCompactList}\small\item\em 日志文件存放路径. \end{DoxyCompactList}\item 
+T\+C\+H\+A\+R \hyperlink{classcommon_1_1_c_text_log_a05e97e2cd0b36c02f51a2affd016acbb}{m\+\_\+sz\+File\+Name} \mbox{[}M\+A\+X\+\_\+\+P\+A\+T\+H\mbox{]}
+\begin{DoxyCompactList}\small\item\em 日志文件名. \end{DoxyCompactList}\item 
+H\+A\+N\+D\+L\+E \hyperlink{classcommon_1_1_c_text_log_aee55c31c87ce36ba34f11e7503355351}{m\+\_\+file}
+\begin{DoxyCompactList}\small\item\em 日志文件句柄. \end{DoxyCompactList}\item 
+S\+Y\+S\+T\+E\+M\+T\+I\+M\+E \hyperlink{classcommon_1_1_c_text_log_ab60caf7016e093cc7276e27a3a60f22d}{m\+\_\+createtime}
+\begin{DoxyCompactList}\small\item\em 日志创建时间. \end{DoxyCompactList}\item 
+\hyperlink{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aee}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L} \hyperlink{classcommon_1_1_c_text_log_ad800d8c6a9cfb7357da2044cf4deeb25}{m\+\_\+level}
+\begin{DoxyCompactList}\small\item\em 日志输出级别, 默认为3, 输出所有日志. \end{DoxyCompactList}\item 
+\hyperlink{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2e}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E} \hyperlink{classcommon_1_1_c_text_log_a3c4007ae4cddee7343b9fd158ca6d07d}{m\+\_\+mode}
+\begin{DoxyCompactList}\small\item\em 日志输出模式\+: 直接,延迟, 默认为直接, 延迟模式为每大于9$\ast$\+L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E输出一次. \end{DoxyCompactList}\item 
+C\+H\+A\+R \hyperlink{classcommon_1_1_c_text_log_a404b1bc0f4585481dfccb0b73fe4d388}{m\+\_\+buffer} \mbox{[}10 $\ast$\hyperlink{_text_log_8h_afa0499dcb85922b683da3918f512adb6}{L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}\mbox{]}
+\begin{DoxyCompactList}\small\item\em 日志缓存. \end{DoxyCompactList}\item 
+C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+O\+N \hyperlink{classcommon_1_1_c_text_log_a674dc6bfc676698846a7f8fee11f2e83}{m\+\_\+cs}
+\begin{DoxyCompactList}\small\item\em 全局互斥体用于同步. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+操作日志类. 
+
+\subsection{成员枚举类型说明}
+\hypertarget{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aee}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L@{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L}}
+\index{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L@{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf common\+::\+C\+Text\+Log\+::\+E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L}}}\label{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aee}
+
+
+日志输出级别 
+
+\begin{DoxyNote}{注解}
+用作构造函数参数 
+\end{DoxyNote}
+\begin{Desc}
+\item[枚举值]\par
+\begin{description}
+\index{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+N\+O\+N\+E@{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+N\+O\+N\+E}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+N\+O\+N\+E@{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+N\+O\+N\+E}}\item[{\em 
+\hypertarget{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeea739a7f4691e3b1be02413e0a4d552003}{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+N\+O\+N\+E}\label{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeea739a7f4691e3b1be02413e0a4d552003}
+}]关闭日志 \index{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+E\+R\+R\+O\+R@{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+E\+R\+R\+O\+R}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+E\+R\+R\+O\+R@{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+E\+R\+R\+O\+R}}\item[{\em 
+\hypertarget{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeeac94e3280bfd3f0db406af28530143da1}{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+E\+R\+R\+O\+R}\label{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeeac94e3280bfd3f0db406af28530143da1}
+}]输出警告级别以上的日志 (日志量极小) \index{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+I\+N\+F\+O@{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+I\+N\+F\+O}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+I\+N\+F\+O@{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+I\+N\+F\+O}}\item[{\em 
+\hypertarget{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeea82cd6c1e7f3371a99033a06cdaf23a81}{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+I\+N\+F\+O}\label{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeea82cd6c1e7f3371a99033a06cdaf23a81}
+}]输出信息级别以上的日志 (不包括调试日志,一般是这个级别) \index{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+A\+L\+L@{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+A\+L\+L}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+A\+L\+L@{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+A\+L\+L}}\item[{\em 
+\hypertarget{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeea7ab4c59a70fe3bf1c63c45e7183a0326}{L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+A\+L\+L}\label{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aeea7ab4c59a70fe3bf1c63c45e7183a0326}
+}]输出调试级别以上的日志 (所有日志,包括调试日志) \end{description}
+\end{Desc}
+\hypertarget{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2e}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E@{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E}}
+\index{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E@{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf common\+::\+C\+Text\+Log\+::\+E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E}}}\label{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2e}
+
+
+日志输出模式 
+
+\begin{DoxyNote}{注解}
+用作构造函数参数. 
+\end{DoxyNote}
+\begin{Desc}
+\item[枚举值]\par
+\begin{description}
+\index{L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+R\+E\+C\+T@{L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+R\+E\+C\+T}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+R\+E\+C\+T@{L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+R\+E\+C\+T}}\item[{\em 
+\hypertarget{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2eaa76de1b0920b606311d0d521477a0731}{L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+R\+E\+C\+T}\label{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2eaa76de1b0920b606311d0d521477a0731}
+}]直接输出日志. \index{L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+L\+A\+Y@{L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+L\+A\+Y}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+L\+A\+Y@{L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+L\+A\+Y}}\item[{\em 
+\hypertarget{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2ea1e90774c6da95492d7d46f9434c7fbde}{L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+E\+L\+A\+Y}\label{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2ea1e90774c6da95492d7d46f9434c7fbde}
+}]延迟输出日志. \end{description}
+\end{Desc}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classcommon_1_1_c_text_log_a77d68466b36334d333ba59e91e8055b2}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!C\+Text\+Log@{C\+Text\+Log}}
+\index{C\+Text\+Log@{C\+Text\+Log}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{C\+Text\+Log}]{\setlength{\rightskip}{0pt plus 5cm}common\+::\+C\+Text\+Log\+::\+C\+Text\+Log (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L}}]{level = {\ttfamily {\bf L\+O\+G\+\_\+\+W\+R\+I\+T\+E\+\_\+\+A\+L\+L}}, }
+\item[{{\bf E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E}}]{writemode = {\ttfamily {\bf L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+D\+I\+R\+E\+C\+T}}, }
+\item[{L\+P\+C\+T\+S\+T\+R}]{lp\+Log\+Name = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classcommon_1_1_c_text_log_a77d68466b36334d333ba59e91e8055b2}
+
+
+C\+Text\+Log的默认构造函数,理论上来说无需手动调用. 
+
+将在方法内创建当日的日志文件. 默认构造函数. \begin{DoxyNote}{注解}
+无需调用,会在初始化的时候由全局变量g\+\_\+logger来创建. 
+\end{DoxyNote}
+\begin{DoxyDate}{日期}
+7/31/2014 
+\end{DoxyDate}
+
+\begin{DoxyParams}{参数}
+{\em level} & 日志等级. \\
+\hline
+{\em writemode} & 写入模式. \\
+\hline
+{\em lp\+Log\+Name} & 日志文件名称,将在构造函数内部自动创建. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{classcommon_1_1_c_text_log_ab0c8fabb54ada6443cadd1fbfe65cf2e}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E} \hyperlink{classcommon_1_1_c_text_log_ae22e9f5eba143051e1193e62caf63aee}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L} \hyperlink{_text_log_8cpp_acd4d3023d24d5314b895981b17825666}{L\+O\+G\+\_\+\+D\+I\+R} 
+\end{DoxySeeAlso}
+\hypertarget{classcommon_1_1_c_text_log_a1a77b26b4412151dd5a655903b652633}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!````~C\+Text\+Log@{$\sim$\+C\+Text\+Log}}
+\index{````~C\+Text\+Log@{$\sim$\+C\+Text\+Log}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{$\sim$\+C\+Text\+Log}]{\setlength{\rightskip}{0pt plus 5cm}common\+::\+C\+Text\+Log\+::$\sim$\+C\+Text\+Log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcommon_1_1_c_text_log_a1a77b26b4412151dd5a655903b652633}
+
+
+析构函数,会在内部调用close(). 
+
+\begin{DoxyAuthor}{作者}
+Debug Go 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+8/1/2014 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{classcommon_1_1_c_text_log_a5cad31ca8ab60776c16ec4ab0a1f0165}{Close()} 
+\end{DoxySeeAlso}
+
+
+\subsection{成员函数说明}
+\hypertarget{classcommon_1_1_c_text_log_a2df32e6ff0a7c85c76b894bdf1a36103}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!Add\+T\+Log@{Add\+T\+Log}}
+\index{Add\+T\+Log@{Add\+T\+Log}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{Add\+T\+Log}]{\setlength{\rightskip}{0pt plus 5cm}void common\+::\+C\+Text\+Log\+::\+Add\+T\+Log (
+\begin{DoxyParamCaption}
+\item[{bool}]{b\+Add\+Line, }
+\item[{{\bf E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+V\+E\+L}}]{level, }
+\item[{L\+P\+C\+T\+S\+T\+R}]{sz\+Src, }
+\item[{L\+P\+C\+T\+S\+T\+R}]{sz\+Func, }
+\item[{U\+L\+O\+N\+G}]{u\+Line, }
+\item[{const W\+C\+H\+A\+R $\ast$}]{format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{classcommon_1_1_c_text_log_a2df32e6ff0a7c85c76b894bdf1a36103}
+
+
+增加一条日志. 
+
+增加一条unicode编码的日志,在调用\+W\+R\+I\+T\+E\+\_\+\+L\+O\+G及\+W\+R\+I\+T\+E\+\_\+\+L\+O\+G\+L\+I\+N\+E时会调用该方法. 
+\begin{DoxyParams}{参数}
+{\em b\+Add\+Line} & true 在末尾加入换行符. \\
+\hline
+{\em level} & 日志信息等级. \\
+\hline
+{\em sz\+Src} & 输出日志的源文件名. \\
+\hline
+{\em sz\+Func} & 输出日志的方法名. \\
+\hline
+{\em u\+Line} & 输出日志所在的行号. \\
+\hline
+{\em format} & 日志的内容. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{_text_log_8h_a8795752c1e91643285740272e71338fc}{W\+R\+I\+T\+E\+\_\+\+L\+O\+G} \hyperlink{_text_log_8h_ac434706ba87ba81884db819ad81a599a}{W\+R\+I\+T\+E\+\_\+\+L\+O\+G\+L\+I\+N\+E} 
+
+\hyperlink{namespacecommon_af715c011984b434cbb7f04b0d4e57589}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+V\+E\+L} {\bfseries W\+F\+I\+L\+E} {\bfseries T\+F\+U\+N\+C\+T\+I\+O\+N} {\bfseries L\+I\+N\+E} 
+\end{DoxySeeAlso}
+\hypertarget{classcommon_1_1_c_text_log_ac795cde93dff7db43cb22ce9d351071f}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!Add\+T\+Log@{Add\+T\+Log}}
+\index{Add\+T\+Log@{Add\+T\+Log}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{Add\+T\+Log}]{\setlength{\rightskip}{0pt plus 5cm}void common\+::\+C\+Text\+Log\+::\+Add\+T\+Log (
+\begin{DoxyParamCaption}
+\item[{bool}]{b\+Add\+Line, }
+\item[{{\bf E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+V\+E\+L}}]{level, }
+\item[{L\+P\+C\+T\+S\+T\+R}]{sz\+Src, }
+\item[{L\+P\+C\+T\+S\+T\+R}]{sz\+Func, }
+\item[{U\+L\+O\+N\+G}]{u\+Line, }
+\item[{const C\+H\+A\+R $\ast$}]{format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{classcommon_1_1_c_text_log_ac795cde93dff7db43cb22ce9d351071f}
+
+
+增加一条ansi编码的日志,在调用\+W\+R\+I\+T\+E\+\_\+\+L\+O\+G及\+W\+R\+I\+T\+E\+\_\+\+L\+O\+G\+L\+I\+N\+E时会调用该方法. 
+
+\begin{DoxySeeAlso}{参见}
+\hyperlink{classcommon_1_1_c_text_log_a2df32e6ff0a7c85c76b894bdf1a36103}{Add\+T\+Log}(bool b\+Add\+Line, \hyperlink{namespacecommon_af715c011984b434cbb7f04b0d4e57589}{E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+V\+E\+L} level, L\+P\+C\+T\+S\+T\+R sz\+Src, L\+P\+C\+T\+S\+T\+R sz\+Func, U\+L\+O\+N\+G u\+Line, const W\+C\+H\+A\+R$\ast$ format, ...); 
+\end{DoxySeeAlso}
+\hypertarget{classcommon_1_1_c_text_log_a5cad31ca8ab60776c16ec4ab0a1f0165}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!Close@{Close}}
+\index{Close@{Close}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void common\+::\+C\+Text\+Log\+::\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1_c_text_log_a5cad31ca8ab60776c16ec4ab0a1f0165}
+
+
+关闭文件句柄 
+
+\begin{DoxyAuthor}{作者}
+Debug Go 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+8/1/2014 
+\end{DoxyDate}
+\begin{DoxySeeAlso}{参见}
+\hyperlink{classcommon_1_1_c_text_log_aee55c31c87ce36ba34f11e7503355351}{m\+\_\+file} 
+\end{DoxySeeAlso}
+\hypertarget{classcommon_1_1_c_text_log_afcda3237d33ad68a499523ed202634e7}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!Create\+New\+Log\+File@{Create\+New\+Log\+File}}
+\index{Create\+New\+Log\+File@{Create\+New\+Log\+File}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{Create\+New\+Log\+File}]{\setlength{\rightskip}{0pt plus 5cm}void common\+::\+C\+Text\+Log\+::\+Create\+New\+Log\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1_c_text_log_afcda3237d33ad68a499523ed202634e7}
+
+
+按日期创建新的日志文件按\char`\"{}processname+yyyymmdd.\+log\char`\"{}格式创建. 
+
+创建一个新的日志文件. \begin{DoxyAuthor}{作者}
+Debug Go 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+8/1/2014 
+\end{DoxyDate}
+
+\begin{DoxyExceptions}{异常}
+{\em 如果创建失败会抛出异常,有可能是文件无法正常创建导致的.} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classcommon_1_1_c_text_log_a53ecacf46cb9b0284ba3acd8c3b1d082}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!Set\+Mode@{Set\+Mode}}
+\index{Set\+Mode@{Set\+Mode}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{Set\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void common\+::\+C\+Text\+Log\+::\+Set\+Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L}}]{level, }
+\item[{{\bf E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E}}]{writemode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classcommon_1_1_c_text_log_a53ecacf46cb9b0284ba3acd8c3b1d082}
+
+
+设置日志记录模式, 
+
+\begin{DoxyAuthor}{作者}
+Debug Go 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日期}
+7/31/2014
+\end{DoxyDate}
+
+\begin{DoxyParams}{参数}
+{\em level} & 输出等级. \\
+\hline
+{\em writemode} & 写入模式. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classcommon_1_1_c_text_log_a404b1bc0f4585481dfccb0b73fe4d388}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!m\+\_\+buffer@{m\+\_\+buffer}}
+\index{m\+\_\+buffer@{m\+\_\+buffer}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{m\+\_\+buffer}]{\setlength{\rightskip}{0pt plus 5cm}C\+H\+A\+R common\+::\+C\+Text\+Log\+::m\+\_\+buffer\mbox{[}10 $\ast${\bf L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1_c_text_log_a404b1bc0f4585481dfccb0b73fe4d388}
+
+
+日志缓存. 
+
+\hypertarget{classcommon_1_1_c_text_log_ab60caf7016e093cc7276e27a3a60f22d}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!m\+\_\+createtime@{m\+\_\+createtime}}
+\index{m\+\_\+createtime@{m\+\_\+createtime}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{m\+\_\+createtime}]{\setlength{\rightskip}{0pt plus 5cm}S\+Y\+S\+T\+E\+M\+T\+I\+M\+E common\+::\+C\+Text\+Log\+::m\+\_\+createtime\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1_c_text_log_ab60caf7016e093cc7276e27a3a60f22d}
+
+
+日志创建时间. 
+
+\hypertarget{classcommon_1_1_c_text_log_a674dc6bfc676698846a7f8fee11f2e83}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!m\+\_\+cs@{m\+\_\+cs}}
+\index{m\+\_\+cs@{m\+\_\+cs}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{m\+\_\+cs}]{\setlength{\rightskip}{0pt plus 5cm}C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+S\+E\+C\+T\+I\+O\+N common\+::\+C\+Text\+Log\+::m\+\_\+cs\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1_c_text_log_a674dc6bfc676698846a7f8fee11f2e83}
+
+
+全局互斥体用于同步. 
+
+\hypertarget{classcommon_1_1_c_text_log_aee55c31c87ce36ba34f11e7503355351}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!m\+\_\+file@{m\+\_\+file}}
+\index{m\+\_\+file@{m\+\_\+file}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{m\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}H\+A\+N\+D\+L\+E common\+::\+C\+Text\+Log\+::m\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1_c_text_log_aee55c31c87ce36ba34f11e7503355351}
+
+
+日志文件句柄. 
+
+\hypertarget{classcommon_1_1_c_text_log_ad800d8c6a9cfb7357da2044cf4deeb25}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!m\+\_\+level@{m\+\_\+level}}
+\index{m\+\_\+level@{m\+\_\+level}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{m\+\_\+level}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L} common\+::\+C\+Text\+Log\+::m\+\_\+level\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1_c_text_log_ad800d8c6a9cfb7357da2044cf4deeb25}
+
+
+日志输出级别, 默认为3, 输出所有日志. 
+
+\hypertarget{classcommon_1_1_c_text_log_a3c4007ae4cddee7343b9fd158ca6d07d}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!m\+\_\+mode@{m\+\_\+mode}}
+\index{m\+\_\+mode@{m\+\_\+mode}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{m\+\_\+mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+N\+U\+M\+\_\+\+L\+O\+G\+\_\+\+M\+O\+D\+E} common\+::\+C\+Text\+Log\+::m\+\_\+mode\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1_c_text_log_a3c4007ae4cddee7343b9fd158ca6d07d}
+
+
+日志输出模式\+: 直接,延迟, 默认为直接, 延迟模式为每大于9$\ast$\+L\+I\+N\+E\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E输出一次. 
+
+\hypertarget{classcommon_1_1_c_text_log_a1e17cd173b1b0f1fe7dcd68a2dbdbe34}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!m\+\_\+str\+File\+Name@{m\+\_\+str\+File\+Name}}
+\index{m\+\_\+str\+File\+Name@{m\+\_\+str\+File\+Name}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{m\+\_\+str\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+H\+A\+R common\+::\+C\+Text\+Log\+::m\+\_\+str\+File\+Name\mbox{[}M\+A\+X\+\_\+\+P\+A\+T\+H\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1_c_text_log_a1e17cd173b1b0f1fe7dcd68a2dbdbe34}
+
+
+日志文件完整路径. 
+
+\hypertarget{classcommon_1_1_c_text_log_aca6715190bbbdc7f30a28c71b808db3d}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!m\+\_\+sz\+Cur\+Path@{m\+\_\+sz\+Cur\+Path}}
+\index{m\+\_\+sz\+Cur\+Path@{m\+\_\+sz\+Cur\+Path}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{m\+\_\+sz\+Cur\+Path}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+H\+A\+R common\+::\+C\+Text\+Log\+::m\+\_\+sz\+Cur\+Path\mbox{[}M\+A\+X\+\_\+\+P\+A\+T\+H\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1_c_text_log_aca6715190bbbdc7f30a28c71b808db3d}
+
+
+日志文件存放路径. 
+
+\hypertarget{classcommon_1_1_c_text_log_a05e97e2cd0b36c02f51a2affd016acbb}{\index{common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}!m\+\_\+sz\+File\+Name@{m\+\_\+sz\+File\+Name}}
+\index{m\+\_\+sz\+File\+Name@{m\+\_\+sz\+File\+Name}!common\+::\+C\+Text\+Log@{common\+::\+C\+Text\+Log}}
+\subsubsection[{m\+\_\+sz\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}T\+C\+H\+A\+R common\+::\+C\+Text\+Log\+::m\+\_\+sz\+File\+Name\mbox{[}M\+A\+X\+\_\+\+P\+A\+T\+H\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classcommon_1_1_c_text_log_a05e97e2cd0b36c02f51a2affd016acbb}
+
+
+日志文件名. 
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+common\+\_\+log/\hyperlink{_text_log_8h}{Text\+Log.\+h}\item 
+common\+\_\+log/\hyperlink{_text_log_8cpp}{Text\+Log.\+cpp}\end{DoxyCompactItemize}
