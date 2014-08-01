@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common_ini", "common_ini\co
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common_log", "common_log\common_log.vcxproj", "{0184EA40-DFDF-464A-9B24-F1D965EECC3B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "common\common.vcxproj", "{55802A2D-A1C4-434F-9E4F-5DD01F7433B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{0184EA40-DFDF-464A-9B24-F1D965EECC3B}.Debug|Win32.Build.0 = Debug|Win32
 		{0184EA40-DFDF-464A-9B24-F1D965EECC3B}.Release|Win32.ActiveCfg = Release|Win32
 		{0184EA40-DFDF-464A-9B24-F1D965EECC3B}.Release|Win32.Build.0 = Release|Win32
+		{55802A2D-A1C4-434F-9E4F-5DD01F7433B5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{55802A2D-A1C4-434F-9E4F-5DD01F7433B5}.Debug|Win32.Build.0 = Debug|Win32
+		{55802A2D-A1C4-434F-9E4F-5DD01F7433B5}.Release|Win32.ActiveCfg = Release|Win32
+		{55802A2D-A1C4-434F-9E4F-5DD01F7433B5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
