@@ -67,6 +67,19 @@ namespace common
 		 */
 		std::string getpath(){ return path_; }
 
+		template <class T>
+		/**
+		 @fn	bool ini::get(const std::string section, const std::string &key, T &value);
+		 @brief	获取指定段(section)的指定键(key)的值.
+		 @author	Debug Go
+		 @date	8/1/2014
+		 @param	section			 	段.
+		 @param	key				 	键.
+		 @param [in,out]	value	值.
+		 @return	true if it succeeds, false if it fails.
+		 @attention 如果ini的节点为空,会重新获取,如果获取失败则返回false.
+		 */
+		bool get(const std::string &section, const std::string &key, T &value);
 	private:
 		/**
 		 @brief	ini文件路径.
@@ -88,6 +101,9 @@ namespace common
 		 */
 		bool getiniroot();
 	};
+
+	
+
 }
 
 #endif // !COMMON_INI_H

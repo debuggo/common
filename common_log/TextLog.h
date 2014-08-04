@@ -26,11 +26,30 @@ namespace common
 	*/
 	enum ENUM_LOG_LINE_LEVEL
 	{
-		LOG_LEVEL_DEBUG = 1,       /**< 调试级别, 仅在调试时输出. */
-		LOG_LEVEL_INFO = 2,        /**< 一般信息输出. */
-		LOG_LEVEL_WARN = 3,        /**< 警告. */
-		LOG_LEVEL_ERROR = 4,       /**< 一般错误. */
-		LOG_LEVEL_FATAL = 5,       /**< 严重错误,  这个级别的错误表示程序一般无法正常进行. */
+		/**
+		 @brief	调试级别, 仅在调试时输出.
+		 */
+		LOG_LEVEL_DEBUG = 1,       
+
+		/**
+		 @brief	一般信息输出.
+		 */
+		LOG_LEVEL_INFO = 2,
+
+		/**
+		 @brief	警告.
+		 */
+		LOG_LEVEL_WARN = 3,
+
+		/**
+		 @brief	一般错误.
+		 */
+		LOG_LEVEL_ERROR = 4,
+
+		/**
+		 @brief	严重错误,  这个级别的错误表示程序一般无法正常进行.
+		 */
+		LOG_LEVEL_FATAL = 5,
 	};
 
 	//#define FAST_RELEASE
@@ -120,8 +139,15 @@ namespace common
 		*/
 		enum ENUM_LOG_MODE
 		{
-			LOG_MODE_DIRECT = 0,  /**< 直接输出日志. */
-			LOG_MODE_DELAY  = 1   /**< 延迟输出日志. */
+			/**
+			 @brief	直接输出日志.
+			 */
+			LOG_MODE_DIRECT = 0,
+
+			/**
+			 @brief	延迟输出日志.
+			 */
+			LOG_MODE_DELAY  = 1
 		};
 
 		/**
@@ -131,10 +157,25 @@ namespace common
 		*/
 		enum ENUM_LOG_LEVEL
 		{
-			LOG_WRITE_NONE = 0,		///<关闭日志
-			LOG_WRITE_ERROR = 1,    ///<输出警告级别以上的日志 (日志量极小)
-			LOG_WRITE_INFO = 2,     ///<输出信息级别以上的日志 (不包括调试日志,一般是这个级别)
-			LOG_WRITE_ALL = 3,      ///<输出调试级别以上的日志 (所有日志,包括调试日志)
+			/**
+			 @brief	关闭日志.
+			 */
+			LOG_WRITE_NONE = 0,
+
+			/**
+			 @brief	输出警告级别以上的日志 (日志量极小).
+			 */
+			LOG_WRITE_ERROR = 1,
+
+			/**
+			 @brief	输出信息级别以上的日志 (不包括调试日志,一般是这个级别).
+			 */
+			LOG_WRITE_INFO = 2,
+
+			/**
+			 @brief	输出调试级别以上的日志 (所有日志,包括调试日志).
+			 */
+			LOG_WRITE_ALL = 3,
 		};
 
 	public: //构造析构
